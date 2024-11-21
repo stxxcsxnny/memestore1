@@ -1,0 +1,52 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Moo+Lah+Lah&family=Mountains+of+Christmas:wght@400;700&family=Rubik+Puddles&display=swap');
+nav{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+
+
+
+
+    > h1{
+        text-transform : uppercase ;
+        font-family: "Moo Lah Lah", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        color: rgb(32, 13, 128);
+
+    }
+    > main{
+        width: 70%;
+        display :flex;
+        justify-content: flex-end;
+
+        >a{
+            color:$dark;
+            margin : 1rem;
+           
+          color: rgb(15, 15, 15);
+          
+          font-family: "Rubik Puddles", system-ui;
+        font-weight: 1000;
+        font-style: normal;
+
+            &:hover{
+                color: $third;
+                border-bottom: 1px solid;
+            }
+        }
+        
+
+    }
+
+   
+
+}

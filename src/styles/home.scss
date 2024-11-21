@@ -1,0 +1,203 @@
+@import 'colors';
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: $second;
+
+
+    > main{
+        position: absolute;
+        text-transform: uppercase;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        justify-content: center;
+
+         h1{
+            font: 400 6rem $text1;
+            font-family: "Moo Lah Lah", sans-serif;
+             font-weight: 400;
+             font-style: normal;
+              color: rgb(234, 232, 243);
+
+         }
+         p{
+            font: 900 1rem $text1;
+            color: $first;
+            
+         }
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:no-repeat center/auto url("../assets/zoro.gif");
+        background-size: 100% 100vh;
+        border-radius: 0 0 200px 200px;
+        opacity: 0.5;
+    }
+
+}
+.home2{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    padding: 500px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -200px;
+   > img{
+    width: 30%;
+    border-radius: 2%;
+    
+
+    animation: imgUp 0.7s linear infinite alternate;
+   }
+   > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+
+    p{
+        color: $first;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        font:100 1.2rem $text2 ;
+        
+    }
+    
+   }
+   @keyframes imgUp{
+    to{
+        transform: translateY(-10px);
+    }
+       
+   }
+
+
+}
+.home3{
+    width:100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    
+    > div{
+        width: 70%;
+        height: 100vh;
+        background-color: $first;
+        border-radius: 0 200px 200px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem ;
+
+        > h1{
+            text-transform: uppercase;
+            border-bottom: 2px solid $dark ;
+            padding: 0.5rem;
+            width: 15rem;
+            color: $dark;
+        }
+        > p{
+            padding: 5rem;
+            letter-spacing: 1px;
+            word-spacing: 10px;
+            line-height: 170%;
+            font-family: "Mountains of Christmas", serif;
+  
+            font-style: normal;
+            font-weight: bold;
+
+        }
+    }
+    
+}
+.home4{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+    >div{
+        background-color: $third;
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    
+
+    > h1{
+        text-transform: uppercase;
+        border-bottom: 2px solid 140px ;
+        padding: 0.5rem;
+        width: 140px;
+        color: rgb(15, 15, 15);
+          
+      font-family: "Rubik Puddles", system-ui;
+        font-style: normal;
+
+    }
+
+    > article{
+        margin: 2rem 0;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 29px;
+        
+        >div{
+            animation: imgUp 0.7s infinite alternate;
+            
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 40px;
+            margin-top: 20px;
+
+    
+
+       >img{
+         width: 10rem;
+         height: 9rem;
+         border-radius: 10%;
+         margin: 1rem;
+
+         &:hover{
+            
+             
+             transform: translateY(-10px) scale(1.5) ;
+
+         }
+       }
+    
+       
+    }
+}
+
+}
+}

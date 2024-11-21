@@ -1,0 +1,89 @@
+@import 'colors';
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  >main{
+
+    background-color: $first;
+    height: 40rem;
+    width: 70%;
+    padding: 3rem;
+    border-radius: 0 200px 200px 0;
+
+    > h1{
+      color: rgb(15, 15, 15);
+          font-family: "Rubik Puddles", system-ui;
+        font-style: normal;
+        word-spacing: 10px;
+
+    }
+
+    > form {
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >  div{
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 80%;
+            margin: 0.5rem;
+
+            > label{
+              color: rgb(15, 15, 15);
+          
+              font-family: "Rubik Puddles", system-ui;
+            font-weight: 600;
+            font-style: normal;
+             letter-spacing: 2px;
+             word-spacing: 5px;
+
+                width: 30%;
+                margin-right:  2rem;
+
+            }
+            > input{
+                align-self: stretch;
+                width: 100%;
+                padding: 15px;
+                border: 0;
+                background-color: rgb(246, 244, 241);
+                border-radius: 5px;
+                font: 100 18px $text1;
+                font-family: "Rubik Puddles", system-ui;
+                outline: none;
+                
+            }
+
+        }
+        > button{
+          padding: 14px 60px;
+          background: transparent;
+          font-size: 18px;
+          margin-top: 50px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          border-radius: 10px;
+
+          &:hover{
+                     background: rgb(180, 9, 9);
+                     font-family: "Rubik Puddles", system-ui ;
+                     font-weight: 900;
+                     
+                   }
+        }
+    }
+  }
+
+}
