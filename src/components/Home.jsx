@@ -1,5 +1,9 @@
 import React from 'react'
-import vg from '../assets/2.png'
+import vg1 from '../assets/memes-icon-25.jpg'
+import vg2 from '../assets/2.png'
+import vg3 from '../assets/meme2.png'
+import vg4 from '../assets/bg2.jpg'
+import vg5 from '../assets/bg5.jpg'
 import { AiFillAmazonCircle, AiFillGoogleCircle, AiFillFacebook, AiFillInstagram, AiFillTwitterCircle} from 'react-icons/ai'
 
 const Home = () => {
@@ -13,7 +17,7 @@ const Home = () => {
          
           </div>
           <div className='home2' >
-              <img src="src/assets/memes-icon-25.jpg" alt="" />
+              <img src={vg1} alt="image" />
               <div>
                   <p>
                   "Facing a challenge? We’ve got you covered! Our team of experts provides customized solutions for any problem, big or small. With 24/7 support and innovative strategies, we turn obstacles into opportunities, ensuring you achieve the results you need. Your solution is just a step away!"
@@ -41,19 +45,19 @@ Stay connected, stay entertained, and let’s make the world a funnier place tog
 
                   <article>
                       <div style={{animationDelay: '0.3s'}}>
-                         <img src="src/assets/2.png" alt="" /> 
+                         <img src={vg2} alt="imge" /> 
                       </div>
 
                       <div style={{animationDelay: '0.5s'}}>
-                          <img src="src/assets/bg.jpg" alt="" />
+                          <img src={vg3} alt="imge1" />
                       </div>
 
                       <div style={{animationDelay: '0.7s'}}>
-                          <img src="src/assets/bg3.jpg" alt="" />
+                          <img src={vg4} alt="imge2" />
                       </div>
 
                       <div style={{animationDelay: '1s'}}>
-                          <img src="src/assets/Screenshot 2024-10-29 171333.png" alt="" />
+                          <img src={vg5} alt="imge3" />
                           
                       </div>
                   </article>
